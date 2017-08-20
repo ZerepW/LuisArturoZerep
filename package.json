@@ -1,0 +1,14 @@
+{
+  "name": "luisarturozerep",
+  "version": "1.0.0",
+  "description": "Proyecto Luis Arturo Zerep Homepage",
+  "main": "Node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Arturo Pérez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
