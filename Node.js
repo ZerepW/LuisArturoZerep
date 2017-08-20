@@ -1,9 +1,12 @@
 var express = require("express");
+var fs = require("fs");
 
 var app = express();
 
 app.get("/",function(req,res){
-    res.send("Hola!"); //manda y cierra la conexion
+    fs.readFile("index.html",function(err,data){
+        res.end(data); //manda y cierra la conexion
+    });
 });
 
-app.listen(7780);   
+app.listen(7781);   
