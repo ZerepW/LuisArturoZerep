@@ -1,10 +1,9 @@
 var express = require("express");
-
+var path = require("path");
 var app = express();
 
-app.use(express.static('img'));
+app.use(express.static(path.join(__dirname,'img')));
 app.get("/",function(req,res){
-    console.log(path.join(__dirname, 'img'));
     res.sendFile("index.html",{root: __dirname});
 });
 
